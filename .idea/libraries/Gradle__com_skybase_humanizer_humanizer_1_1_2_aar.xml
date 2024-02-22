@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.skybase.humanizer:humanizer:1.1.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3828fcff489fe889f9fe1510d2c797d0/jetified-humanizer-1.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3828fcff489fe889f9fe1510d2c797d0/jetified-humanizer-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3828fcff489fe889f9fe1510d2c797d0/jetified-humanizer-1.1.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.skybase.humanizer/humanizer/1.1.2/db1cd655c05043e961e59d41f4e9f90e316d2dcc/humanizer-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.skybase.humanizer/humanizer/1.1.2/c941b76c11ced4e93a14f5c551795cd76d6bc8f0/humanizer-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

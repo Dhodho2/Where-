@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Where@</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_view_watch_read">Watch</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="type_your_message">Type a Comment</string>
+    <string name="NoRecent">No recent</string>
+    <string name="hint_email_account">\@-email-account or + Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="hint_password">password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="title_activity_account_channel_profile">AccountChannelProfile</string>
+    <array name="account_types">
+        <item>Personal Account</item>
+        <item>Business Account</item>
+    </array>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading ....</string>
+
+
+
+    <string name="tv_select">Select your streamer</string>
+    <string name="hint_rtsp">rtsp://yourendpoint</string>
+    <string name="hint_rtmp">rtmp://yourendpoint</string>
+    <string name="start_button">Stream </string>
+    <string name="stop_button">Stop stream</string>
+    <string name="switch_camera_button">Switch camera</string>
+    <string name="select_file">Select file</string>
+    <string name="start_record">Record</string>
+    <string name="stop_record">Stop record</string>
+    <string name="resync_file">ReSync file</string>
+
+
+
+    <string name="tab_gallery">Gallery</string>
+    <string name="tab_photo">Photo</string>
+    <string name="tab_video">Video</string>
+
+    <string name="bt_next">Next</string>
+
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+
+    <!-- ICON -->
+    <string name="icon_check" translatable="false">d</string>
+    <string name="icon_option_h" translatable="false">l</string>
+    <string name="icon_option_v" translatable="false">m</string>
+    <string name="icon_social" translatable="false">n</string>
+    <string name="icon_email" translatable="false">I</string>
+    <string name="icon_back_md" translatable="false">Z</string>
+    <string name="icon_close_md" translatable="false">0</string>
+    <string name="icon_share_md" translatable="false">1</string>
+    <string name="icon_circle_error" translatable="false">5</string>
+    <string name="icon_droid" translatable="false">7</string>
+</resources>

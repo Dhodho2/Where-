@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="rdsol.whereat"
+    android:installLocation="internalOnly">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- needed by background Rtp service to keep service alive -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Optional for play store -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".activities.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_main_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_main_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeMaterialComponents"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <receiver android:enabled="false"
+            android:name=".services.others.ShowReminderService" />
+
+        <activity
+            android:name=".activities.VideoStreamActivity"
+            android:theme="@style/AppThemeMaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.GeneralFragmentHandlerActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppThemeMaterialComponents">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.whereat.com"
+                    android:pathPattern="projects/AAllAA/whereat/..*/..*"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterUser"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".activities.AccountChannelProfile"
+            android:label="@string/title_activity_account_channel_profile"
+            android:theme="@style/AppThemeMaterialComponents.NoActionBar" />
+        <activity android:name=".activities.StreamShowActivity" />
+        <activity
+            android:name=".activities.LogIn"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".activities.Settings"
+            android:theme="@style/AppThemeMaterialComponents" />
+        <activity
+            android:name=".activities.ViewWatchRead"
+            android:theme="@style/AppThemeMaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.SplashScreen"
+            android:theme="@style/AppThemeMaterialComponents.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeMaterialComponents.NoActionBar">
+
+        </activity> <!-- Enables the Google Pay API -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+R_DEF: Internal format may change without notice
+local
+attr? AAEnabled
+attr aspectRatioMode
+attr isFlipHorizontal
+attr isFlipVertical
+attr keepAspectRatio
+attr? numFilters
+id adjust
+id adjust_rotate
+id fill
+id fill_rotate
+styleable LightOpenGlView keepAspectRatio aspectRatioMode isFlipHorizontal isFlipVertical
+styleable OpenGlView AAEnabled numFilters keepAspectRatio aspectRatioMode isFlipHorizontal isFlipVertical

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "com.pedro.rtsp",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 183,
+        "versionName": "1.8.3",
+        "outputFile": "rtsp-release.aar",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "../../library_manifest/release/AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.pedro.rtsp",
+        "split": ""
+      }
+    }
+  ]
+}

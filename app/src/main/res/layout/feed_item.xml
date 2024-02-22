@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llroot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?recyclerview_item_background_color"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardBackgroundColor="?recyclerview_item_background_color"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_18">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_account_circle_deep_purple_600_24dp"
+                    app:civ_border_color="?maintextColor"
+                    app:civ_border_width=".5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/titleOfCardAccount"
+                    android:layout_width="284dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:paddingStart="11dp"
+                    android:text="Title Of Card Item ... .. .."
+                    android:textColor="?maintextColor"
+
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/avatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.448"
+                    app:layout_constraintStart_toEndOf="@+id/titleOfCardAccount"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/feed_item_design"
+
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@color/colorPrimary"
+                    app:cardBackgroundColor="?recyclerview_item_background_color"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:id="@+id/llimages"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/image_thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_main_icon" />
+
+                        <com.mohan.ribbonview.RibbonView
+                            android:id="@+id/ribbonView2"
+                            app:ribbonFillColor="@color/colorPrimary"
+                            app:ribbonStrokeColor="@color/white"
+                            app:ribbonStrokeWidth="1dp"
+                            app:ribbonGravity="right"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:ems="7"
+                            android:visibility="invisible"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/white"
+                            android:layout_alignParentRight="true"
+                            tools:text="Two days left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <rdsol.whereat.customeviews.TriangleLabelView
+                            android:id="@+id/labelTriangle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            app:backgroundColor="@color/colorPrimary"
+                            app:corner="leftTop"
+                            app:labelBottomPadding="5dp"
+                            app:labelCenterPadding="0dp"
+                            app:labelTopPadding="20dp"
+                            app:primaryText="**Show**"
+                            app:primaryTextColor="@color/white"
+                            app:primaryTextSize="16sp"
+                            app:secondaryText="**"
+                            app:secondaryTextColor="@color/gray"
+                            app:secondaryTextSize="11sp"
+                            tools:layout_height="30dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/llVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:minHeight="400dp"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.allattentionhere.autoplayvideos.AAH_VideoImage
+                                android:id="@+id/img_playback"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                            <ImageView
+                                android:id="@+id/image_thumbnail_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_main_icon" />
+
+                            <ImageView
+                                android:id="@+id/img_vol"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|bottom"
+                                android:src="@drawable/ic_mic_off_black_24dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_12">
+
+                <com.like.LikeButton
+                    android:id="@+id/like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    app:liked="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".4"
+                        android:padding="2dp"
+                        android:paddingStart="13dp"
+                        android:text="20-02-2017 (12:00 PM)"
+                        android:textColor="?maintextColor"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/comments_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".6"
+                        android:padding="2dp"
+                        android:paddingStart="11dp"
+                        android:text="0 comments"
+                        android:textColor="?maintextColor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="1dp"
+                android:padding="5dp"
+                android:paddingStart="13dp"
+                android:text="description of sort at hand of the content to be shown on the card itself to have power"
+                android:textColor="?maintextColor"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/commentPlaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/feed_item_2_design"
+                android:gravity="left"
+                android:paddingStart="@dimen/dp_12"
+                android:paddingTop="3dp"
+                android:paddingEnd="@dimen/dp_12"
+                android:paddingBottom="3dp"
+                android:text="Add Comment ... "
+                android:textColor="@color/medium_grey" />
+
+            <EditText
+                android:id="@+id/comment_home_feed"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/feed_item_design"
+                android:hint="Comment"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="?maintextColor"
+                android:textColorHint="?maintextColor"
+                android:visibility="gone" />
+            <!--<com.google.android.material.textfield.TextInputLayout
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColorHint="?maintextColor"
+                app:boxBackgroundColor="?recyclerview_item_background_color"
+                app:boxStrokeColor="?maintextColor"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                app:hintTextColor="?maintextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/comment_home_feed"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="comment"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+
+                    android:singleLine="true"
+                    android:textColor="?maintextColor"
+                    android:textColorHint="?maintextColor" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

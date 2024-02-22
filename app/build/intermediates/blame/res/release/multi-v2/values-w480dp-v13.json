@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/localx/AndroidStudioProjects/where@/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w480dp-v13/values-w480dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/localx/.gradle/caches/transforms-2/files-2.1/8006466bfe2d6fc91f5a5fb8538f0d19/jetified-NiftyDialogEffects-1.0.0/res/values-w480dp-v13/values.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "154",
+                        "endColumns": "45",
+                        "endOffsets": "195"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}

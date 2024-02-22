@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:background="?screen_view_background">
+
+
+    <LinearLayout
+        app:layout_goneMarginBottom="@dimen/dp_12"
+        android:id="@+id/buttomT"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="4dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+android:paddingStart="15dp"
+        android:paddingEnd="@dimen/dp_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135">
+        <ImageButton
+            android:id="@+id/main_dialog_emoji"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/emoji_ios_category_smileysandpeople"
+            tools:ignore="ContentDescription"
+            />
+
+        <com.vanniktech.emoji.EmojiEditText
+
+            android:id="@+id/commet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:hint="Add Comment"
+            android:inputType="text"
+            android:lines="1"
+
+            android:textColor="@color/medium_grey"
+            android:textColorHint="@color/medium_grey"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_marginEnd="4dp"
+            android:id="@+id/postCommentBtn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight=".1"
+            android:text="Post"
+
+            android:gravity="center"
+            android:textColor="?maintextColor"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

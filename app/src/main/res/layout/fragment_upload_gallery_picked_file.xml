@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?screen_view_background"
+    android:padding="@dimen/dp_16"
+    tools:context=".fragments.NotificationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="90dp"
+                android:id="@+id/circle_previw"
+                android:layout_marginEnd="10dp"
+                android:layout_height="90dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="?maintextColor"
+                app:boxBackgroundColor="?recyclerview_item_background_color"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="?maintextColor"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                app:hintTextColor="?maintextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/postTitle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Post Title"
+                    android:imeOptions="actionNext"
+
+                    android:singleLine="true"
+                    android:textColor="?maintextColor"
+                    android:textColorHint="?maintextColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@drawable/feed_item_design"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/select_imagesOnly"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_menu_gallery"
+                android:layout_width="30dp"
+                android:layout_height="40dp"/>
+            <ImageView
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_menu_slideshow"
+                android:layout_width="30dp"
+                android:id="@+id/select_videosOnly"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_14"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="Select Media"
+                android:textColor="?maintextColor" />
+
+            <ImageView
+                android:id="@+id/mdeia"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="?maintextOppositeColor"
+                android:src="@drawable/ic_main_icon"
+                android:textColor="?maintextColor"
+                android:textColorHint="?maintextOppositeColor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_14"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="?maintextColor"
+                app:boxBackgroundColor="?recyclerview_item_background_color"
+
+                app:boxStrokeColor="?maintextColor"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                app:hintTextColor="?maintextColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/postDescription"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Description"
+
+                    android:inputType="textMultiLine"
+                    android:minHeight="23dp"
+                    android:singleLine="false"
+
+                    android:textColor="?maintextColor"
+                    android:textColorHint="?maintextColor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadpost"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="@dimen/dp_12"
+            android:text="-- Post --"
+            android:textColor="?maintextColor"
+            app:cornerRadius="@dimen/dp_12"
+
+            app:iconGravity="start"
+            app:iconPadding="@dimen/dp_12"
+            app:iconSize="@dimen/dp_18"
+            app:iconTint="?maintextColor"
+            app:rippleColor="?maintextColor"
+            app:strokeColor="?maintextColor" />
+    </LinearLayout>
+
+</ScrollView>

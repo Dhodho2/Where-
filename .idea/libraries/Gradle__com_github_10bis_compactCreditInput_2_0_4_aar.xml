@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.10bis:compactCreditInput:2.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aea534ab10e05866610fde338fe2869f/jetified-compactCreditInput-2.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aea534ab10e05866610fde338fe2869f/jetified-compactCreditInput-2.0.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aea534ab10e05866610fde338fe2869f/jetified-compactCreditInput-2.0.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.10bis/compactCreditInput/2.0.4/ea002d247fe74fe052c8d3d650f50fa40e74f246/compactCreditInput-2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

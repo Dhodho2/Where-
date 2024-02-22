@@ -1,0 +1,176 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "rdsol.whereat"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+repositories {
+
+    maven { url 'https://jitpack.io' }
+
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven {
+
+        url 'https://dl.bintray.com/wangyuwei/maven'
+    }
+
+}
+/*
+native_dependencies {
+    */
+/*artifact ('io.pristine:libjingle_peerconnection_so:7113:armeabi-v7a') {
+        addLibPrefixToArtifact=false
+    }*//*
+
+}
+*/
+
+dependencies {
+    def work_version = "2.3.4"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.android.support:palette-v7:29.0.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support:support-v4:29.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'com.github.jd-alexander:LikeButton:0.2.0'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.firebase:firebase-config:19.1.4'
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.2'
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+    implementation "androidx.concurrent:concurrent-futures:1.0.0"
+    implementation "androidx.collection:collection:1.1.0"
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.florent37:singledateandtimepicker:2.1.3'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // implementation 'com.google.android.exoplayer:exoplayer:2.7.2'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.2'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.7.2'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.2'
+    // implementation 'com.google.android.exoplayer:extension-rtmp:2.7.3'
+    implementation 'com.pranavpandey.android:dynamic-toasts:3.2.0'
+    implementation 'com.pranavpandey.android:dynamic-utils:3.2.1'
+    implementation 'me.wangyuwei:ParticleView:1.0.4'
+    implementation 'com.github.franmontiel:FullScreenDialog:1.0.1'
+    implementation('com.squareup.okhttp3:okhttp:4.4.1')
+    implementation 'com.evernote:android-job:1.4.2'
+    implementation "android.arch.work:work-runtime:1.3.0"
+    implementation "androidx.work:work-runtime:$work_version"
+    implementation "androidx.work:work-gcm:$work_version"
+
+    def camerax_version = '1.0.0-beta01'
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    // If you want to use the CameraX View class
+    implementation 'androidx.camera:camera-view:1.0.0-alpha08'
+    // If you want to use the CameraX Extensions library
+    implementation 'androidx.camera:camera-extensions:1.0.0-alpha08'
+    // If you want to use the CameraX Lifecycle library
+    implementation 'androidx.camera:camera-lifecycle:1.0.0-beta01'
+    implementation 'com.github.MasayukiSuda:CameraRecorder-android:v0.1.5'
+    // implementation 'io.pristine:libjingle_peerconnection:7113'
+    implementation 'io.pristine:libjingle:11139@aar'
+    implementation 'com.github.sd6352051:NiftyDialogEffects:1.0.0'
+    implementation('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true;
+    }
+    implementation 'com.rishabhharit.roundedimageview:RoundedImageView:0.8.4'
+    implementation 'com.github.10bis:compactCreditInput:2.0.4'
+    implementation 'com.github.manojbhadane:PaymentCardView:v1.3'
+    implementation 'com.github.Ferfalk:SimpleSearchView:0.1.5'
+    implementation 'com.github.skydoves:powermenu:2.1.2'
+    implementation 'com.fxn769:bubbletabbar:1.0.5'
+    implementation files('libs/extension-rtmp-2.6.1.aar')
+    //implementation files('libs/extension-rtmp-2.6.1.aar')
+    implementation project(path: ':rtmp-client-3.0.1')
+    implementation project(path: ':encoder')
+    implementation project(path: ':rtplibrary')
+    implementation project(path: ':rtsp')
+    implementation project(path: ':rtmp')
+    //implementation project(path: ':badge_drawer')
+    //implementation 'com.github.shts:TriangleLabelView:1.1.0'
+
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.0'
+    implementation 'com.github.mreram:ticketview:1.0.0'
+    implementation 'com.mastercard.gateway:gateway-android:1.1.4'
+    //   implementation 'com.mastercard.mp.checkout:masterpass-core:2.4.0@aar'
+    //implementation 'com.mastercard.mp.checkout:masterpass-merchant:2.4.0@aar'
+    implementation 'com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.oktavianto:ionalert:1.0.4'
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+    implementation 'biz.kasual:materialnumberpicker:1.2.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    implementation "com.github.mohanmanu484:RibbonView:1.2"
+    implementation 'com.skybase.humanizer:humanizer:1.1.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-emoji:28.0.0"
+    implementation 'co.lujun:androidtagview:1.1.7'
+
+    implementation 'com.veinhorn.tagview:library:1.0.4'
+    //implementation "com.hendraanggrian.appcompat:socialview-core:0.2"
+
+    // auto-complete hashtag and mention
+    implementation "com.hendraanggrian.appcompat:socialview-commons:0.2"
+    implementation 'com.github.danylovolokh:video-player-manager:0.2.0'
+    implementation 'com.github.danylovolokh:list-visibility-utils:0.2.0'
+    implementation 'com.allattentionhere:autoplayvideos:0.2.0'
+
+    implementation 'com.desarrollodroide:fragmenttransactionextended:1'
+    implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+    implementation 'com.vanniktech:emoji-ios:0.7.0-SNAPSHOT'
+    implementation 'com.vanniktech:emoji-google:0.7.0-SNAPSHOT'
+    implementation 'com.vanniktech:emoji-twitter:0.7.0-SNAPSHOT'
+    implementation 'com.github.ImaginativeShohag:Oops-No-Internet:v1.1.3'
+
+}

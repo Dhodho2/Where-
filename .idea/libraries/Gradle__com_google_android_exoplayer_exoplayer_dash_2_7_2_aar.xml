@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.7.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7a0a99b9d5ab6ff3bca1469a9ee5c84/jetified-exoplayer-dash-2.7.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5b8787bdbd5c9d4d54ddf1b4f4aac99/jetified-exoplayer-dash-2.7.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7a0a99b9d5ab6ff3bca1469a9ee5c84/jetified-exoplayer-dash-2.7.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7a0a99b9d5ab6ff3bca1469a9ee5c84/jetified-exoplayer-dash-2.7.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7a0a99b9d5ab6ff3bca1469a9ee5c84/jetified-exoplayer-dash-2.7.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1aae56bd83d3963488766b87182795cf/jetified-exoplayer-dash-2.7.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5b8787bdbd5c9d4d54ddf1b4f4aac99/jetified-exoplayer-dash-2.7.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5b8787bdbd5c9d4d54ddf1b4f4aac99/jetified-exoplayer-dash-2.7.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5b8787bdbd5c9d4d54ddf1b4f4aac99/jetified-exoplayer-dash-2.7.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-dash/2.7.2/be87da7bd59974229ff8a63f85aa5a0d9cad8299/exoplayer-dash-2.7.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-dash/2.7.2/db5ec47de5bc9f8d3759a3b11b51547dae903365/exoplayer-dash-2.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="zw.co.rdsol.admire.afmhymns.EventRead">
+    <item
+        android:id="@+id/action_settings_view"
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/action_logging"
+        android:orderInCategory="104"
+
+        android:title="Login"
+        />
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "28483234838",
+    "firebase_url": "https://whereat-b3e24.firebaseio.com",
+    "project_id": "whereat-b3e24",
+    "storage_bucket": "whereat-b3e24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28483234838:android:25b10918500f1b1918d937",
+        "android_client_info": {
+          "package_name": "rdsol.whereat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28483234838-8609en7p3migufc6hc6i3n8ocp9vifbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Niz7X7C9C0sLqOWFWTXORf2Ch6Z2O5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28483234838-8609en7p3migufc6hc6i3n8ocp9vifbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

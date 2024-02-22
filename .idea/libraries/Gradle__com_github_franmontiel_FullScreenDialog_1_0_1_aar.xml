@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.franmontiel:FullScreenDialog:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5b515b7aed9149533e182b8d2c698f27/jetified-FullScreenDialog-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5b515b7aed9149533e182b8d2c698f27/jetified-FullScreenDialog-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5b515b7aed9149533e182b8d2c698f27/jetified-FullScreenDialog-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6340e1c56c6ecfb058944820eaa4b1f/jetified-FullScreenDialog-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6340e1c56c6ecfb058944820eaa4b1f/jetified-FullScreenDialog-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6340e1c56c6ecfb058944820eaa4b1f/jetified-FullScreenDialog-1.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.franmontiel/FullScreenDialog/1.0.1/312b3c4694dc16e1bfd3b136d1295d4872b06229/FullScreenDialog-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.franmontiel/FullScreenDialog/1.0.1/4fa366292b99ccd2acd8063f6787d817809563d9/FullScreenDialog-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

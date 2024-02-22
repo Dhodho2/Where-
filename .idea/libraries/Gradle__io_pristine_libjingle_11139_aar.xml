@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: io.pristine:libjingle:11139@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1146667c2f17010e04f587ea6a3786ce/jetified-libjingle-11139/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21b169841145241ef3fb34b46dd5d7cb/jetified-libjingle-11139/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21b169841145241ef3fb34b46dd5d7cb/jetified-libjingle-11139/jars/libs/libjingle_peerconnection.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21b169841145241ef3fb34b46dd5d7cb/jetified-libjingle-11139/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21b169841145241ef3fb34b46dd5d7cb/jetified-libjingle-11139/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.pristine/libjingle/11139/ed6ef34cf70d86cde9c904348df458adc61e693c/libjingle-11139-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.pristine/libjingle/11139/a6f6cb4c981b134bdca2dc3acf470344949d8263/libjingle-11139-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

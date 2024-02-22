@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f2d25571c9bd7b7e8b73bf346a9f7b7b/jetified-fadingedgelayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f2d25571c9bd7b7e8b73bf346a9f7b7b/jetified-fadingedgelayout-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f2d25571c9bd7b7e8b73bf346a9f7b7b/jetified-fadingedgelayout-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bosphere.android-fadingedgelayout/fadingedgelayout/1.0.0/509e8fdd7ab8763fbd1896ec5c96c1c87e3fa20d/fadingedgelayout-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bosphere.android-fadingedgelayout/fadingedgelayout/1.0.0/6ea0d51f7e84688e4bde126394b6c2295b8c8afc/fadingedgelayout-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#5E35B1</color>
+    <color name="color_ripple">#13000000</color>
+    <color name="error_color">#F44336</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FFC107</color>
+    <color name="dark_gray">#99323232</color>
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="cardview_light_background">#FFFFFFFF</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="orange">#FF6E00</color>
+
+    <color name="blue">#08a2e8</color>
+    <color name="hint">#cfcfcf</color>
+
+    <color name="textColor">@color/white</color>
+    <color name="colorPrimaryTextDefaultMaterialLight">#DE000000</color>
+
+    <color name="colorSecondaryTextDefaultMaterialLight">#8A000000</color>
+
+    <color name="colorPrimaryTextDefaultMaterialDark">#FFFFFFFF</color>
+    <color name="colorSecondaryTextDefaultMaterialDark">#B3FFFFFF</color>
+    <color name="background_color">#FCFCFC</color>
+
+    <color name="chat_user_reply_background_color">#c8f0ff</color>
+    <color name="chat_company_reply_background_color">#F5F5F5</color>
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="dark_theme_back_ground_color">#303030</color>
+    <color name="dark_theme_item_color">#424242</color>
+    <color name="badgeShapeColor">#ff444444</color>
+    <color name="badgeTextColor">#ffffffff</color>
+
+
+
+
+    <color name="green">#A8B32C</color>
+    <color name="light_cream">#E6E3E0</color>
+    <color name="sunny_grey">#BBB4A7</color>
+    <color name="light_grey">#d1d1d1</color>
+    <color name="dim_grey">#68645D</color>
+    <color name="chestnut">#807766</color>
+    <color name="egg_shell">#EFEEED</color>
+    <color name="dark_chocolate">#2E2B25</color>
+
+    <color name="white_60">#99FFFFFF</color>
+    <color name="dark_grey">#838383</color>
+
+    <color name="red_error">#C86A6A</color>
+    <color name="red_record">#CE0B24</color>
+
+</resources>

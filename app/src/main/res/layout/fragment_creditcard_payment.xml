@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/tools"
+    android:background="?screen_view_background"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/tools"
+    android:background="?screen_view_background"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="@dimen/dp_16"
+android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        app:cardBackgroundColor="?recyclerview_item_background_color"
+        app:cardCornerRadius="@dimen/dp_12"
+        app:contentPadding="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?screen_view_background"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_8">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:text="Your Link Ticks Balance"
+                android:textColor="?maintextColor"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/linkTicks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:text="300  "
+                android:textColor="?maintextColor"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:text="Info:"
+                android:textColor="?maintextColor"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Purchase Link-Ticks to be able to watch show  "
+                android:textColor="?maintextColor"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.manojbhadane.PaymentCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:id="@+id/btnPay"
+        app:cv_cardTitle="Purchase Link-Tick"
+        app:cv_submitBtnText="Pay" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shareBtn"
+
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/dp_16"
+            app:iconGravity="start"
+            app:icon="@drawable/ic_account_circle_deep_purple_600_24dp"
+            android:text="Share Link Ticks To"
+            android:textColor="?maintextColor"
+            app:iconTint="?maintextColor"
+            app:rippleColor="?maintextColor"
+            app:strokeColor="?maintextColor"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shareBtnLinkText"
+
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/dp_16"
+            app:iconGravity="start"
+            app:icon="@drawable/ic_link_black_24dp"
+            android:text="Share Link Ticks Via"
+            android:textColor="?maintextColor"
+            app:iconTint="?maintextColor"
+            app:rippleColor="?maintextColor"
+            app:strokeColor="?maintextColor"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+</LinearLayout>
+</ScrollView>

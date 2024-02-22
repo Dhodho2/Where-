@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:rtmp-client-3.0.1:unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/rtmp-client-3.0.1/build/.transforms/b6b3eaba2cb9ddf43d9f72e35790b79c/jetified-rtmp-client-3.0.1/res" />
+      <root url="file://$PROJECT_DIR$/rtmp-client-3.0.1/build/.transforms/fc01f0085e2890c8b7d9abc7323b4929/jetified-rtmp-client-3.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/rtmp-client-3.0.1/build/.transforms/fc01f0085e2890c8b7d9abc7323b4929/jetified-rtmp-client-3.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/rtmp-client-3.0.1/build/.transforms/fc01f0085e2890c8b7d9abc7323b4929/jetified-rtmp-client-3.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

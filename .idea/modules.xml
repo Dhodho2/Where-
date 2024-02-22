@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WhereAt.iml" filepath="$PROJECT_DIR$/.idea/modules/WhereAt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WhereAt.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WhereAt.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/encoder/WhereAt.encoder.iml" filepath="$PROJECT_DIR$/.idea/modules/encoder/WhereAt.encoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extension-rtmp-2.6.1/WhereAt.extension-rtmp-2.6.1.iml" filepath="$PROJECT_DIR$/.idea/modules/extension-rtmp-2.6.1/WhereAt.extension-rtmp-2.6.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rtmp/WhereAt.rtmp.iml" filepath="$PROJECT_DIR$/.idea/modules/rtmp/WhereAt.rtmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rtmp-client-3.0.1/WhereAt.rtmp-client-3.0.1.iml" filepath="$PROJECT_DIR$/.idea/modules/rtmp-client-3.0.1/WhereAt.rtmp-client-3.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rtplibrary/WhereAt.rtplibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/rtplibrary/WhereAt.rtplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rtsp/WhereAt.rtsp.iml" filepath="$PROJECT_DIR$/.idea/modules/rtsp/WhereAt.rtsp.iml" />
+    </modules>
+  </component>
+</project>

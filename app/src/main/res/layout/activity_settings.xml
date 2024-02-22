@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?screen_view_background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_8">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        app:cardBackgroundColor="?recyclerview_item_background_color"
+
+        app:cardCornerRadius="@dimen/dp_8"
+        app:contentPadding="@dimen/dp_8">
+
+        <LinearLayout
+            android:background="?recyclerview_item_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="90dp"
+                app:civ_border_width=".5dp"
+                app:civ_border_color="?maintextColor"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_account_circle_deep_purple_600_24dp"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/llEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/NameOfUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="User Name"
+                    android:textColor="?maintextColor"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email_user"
+                    android:textColor="?maintextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="Email Address"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="@dimen/dp_14"
+        app:cardBackgroundColor="?recyclerview_item_background_color"
+        android:background="?recyclerview_item_background_color"
+        app:contentPadding="@dimen/dp_8">
+
+        <LinearLayout
+            android:background="?recyclerview_item_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/is_cache_comments"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+               android:enabled="false"
+
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="Enable Caching Comments"
+                android:textColor="?switchColor" />
+            <View
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="4dp"
+                android:background="?maintextColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <Switch
+                android:id="@+id/is_darkMode"
+                android:layout_width="match_parent"
+android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="Enable Dark Mode"
+                android:textColor="?switchColor" />
+            <View
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="4dp"
+                android:background="?maintextColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <Switch
+                android:id="@+id/is_frontCameraMode"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="Use Back Camera Mode"
+                android:textColor="?switchColor" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:text="Log Out"
+        android:textColor="?maintextColor"
+        app:iconTint="?maintextColor"
+        app:rippleColor="?maintextColor"
+        app:strokeColor="?maintextColor"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changeFontSize"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:text="Change Font Size"
+        android:textColor="?maintextColor"
+
+        app:iconTint="?maintextColor"
+        app:rippleColor="?maintextColor"
+        app:strokeColor="?maintextColor"
+        android:visibility="gone" />
+</LinearLayout>

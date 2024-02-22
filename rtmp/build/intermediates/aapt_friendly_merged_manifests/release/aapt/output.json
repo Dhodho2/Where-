@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "net.ossrs.rtmp",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "AAPT_FRIENDLY_MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 183,
+        "versionName": "1.8.3",
+        "outputFile": "rtmp-release.aar",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "net.ossrs.rtmp",
+        "split": ""
+      }
+    }
+  ]
+}

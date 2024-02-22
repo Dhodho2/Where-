@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.veinhorn.tagview:library:1.0.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e784c19e6526400af5bc9907d4d86e8e/jetified-library-1.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e784c19e6526400af5bc9907d4d86e8e/jetified-library-1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e784c19e6526400af5bc9907d4d86e8e/jetified-library-1.0.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.tagview/library/1.0.4/86d63faa32d2b243d707f08ffd01a1ffd22d3151/library-1.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.tagview/library/1.0.4/3665a4da93be3415a352f583ac1394ff6e55b1f0/library-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
